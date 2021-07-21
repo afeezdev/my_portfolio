@@ -10,7 +10,7 @@ export default function Intro() {
             backDelay:2000,
             backSpeed: 60,
             showCursor:true, 
-            strings: ["Frontend Developer", "Backend Developer", "Full-Stack Developer"]
+            strings: ["Frontend Developer", "Backend Developer", "Full-Stack Developer", "Designer"]
         })
     },[])
     return (
