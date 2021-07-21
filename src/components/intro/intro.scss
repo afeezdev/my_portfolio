@@ -8,7 +8,7 @@
 
     .imageContainer{
         width: 700px;
-        height: 700px;
+        height: 650px;
         background-color: crimson;
         border-radius: 50%;
         display: flex;
@@ -16,7 +16,6 @@
         justify-content: center;
         float: right;
         img{
-            height: 100.01%;
             width: 100%;
         }
     }
@@ -47,6 +46,18 @@
             span{
                 font: inherit;
                 color: crimson;
+            }
+            .ityped-cursor{
+                animation: blink 1s infinite;
+            }
+
+            @keyframes blink {
+                50%{
+                    opacity: 1;
+                }
+                100%{
+                    opacity: 0;
+                }
             }
         }
     }
