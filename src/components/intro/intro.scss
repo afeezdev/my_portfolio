@@ -1,22 +1,37 @@
+@import "../../global.scss";
+
 .intro {
   background-color: white;
   display: flex;
+
+  @media only screen{
+    width:$width;
+    flex-direction: column;
+    align-items: center;
+    }
+
 
   .left{
     flex: 0.5;
     overflow: hidden;
 
     .imageContainer{
-        width: 700px;
-        height: 650px;
+        width: 650px;
+        height: 600px;
         background-color: crimson;
         border-radius: 50%;
         display: flex;
         align-items: flex-end;
         justify-content: center;
         float: right;
+       
+        @media only screen {
+            margin-top: 50px;
+            }
         img{
             width: 100%;
+
+            
         }
     }
   }
@@ -33,15 +48,30 @@
         flex-direction: column;
         justify-content: center;
 
+        @media only screen {
+            padding: 0;
+            align-items: center;
+            }
+        
+        
+
         h1{
             font-size: 60px;
             margin: 10px 0;
+
+            @media only screen {
+                font-style: 40px;
+                }
         }
         h2{
             font-style: 35px;
         }
         h3{
             font-style: 30px;
+
+            @media only screen {
+                font-style: 20px;
+                }
 
             span{
                 font: inherit;
